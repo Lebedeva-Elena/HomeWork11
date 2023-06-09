@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.concurrent.Callable;
 
 //Создайте класс Book, который содержит в себе данные о названии, авторе и годе публикации книги.
 // Типы полей должны быть String, Author (его мы создадим в п. 2) и int.
@@ -19,7 +20,15 @@ public class App {
         Author sinsero = new Author("Джен", "Синсеро");
         Author marks = new Author("Карл", "Маркс");
         Book niSu = new Book("Ни сы", sinsero, 2013 );
-        Book сapital = new Book("Капитал", marks, 1867);
+        Book сapitalMarks = new Book("Капитал", marks, 1867);
+
+        niSu.setYear(1967);
+        System.out.println("Книга: " + niSu.getName() + " опубликована:" +
+                niSu.getYear() + ". Автор книги: " + niSu.getAuthor().getFirstName() + " "
+                + niSu.getAuthor().getLastName());
+
+
+
 
 
 
