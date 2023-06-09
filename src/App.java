@@ -20,13 +20,16 @@ public class App {
         Author sinsero = new Author("Джен", "Синсеро");
         Author marks = new Author("Карл", "Маркс");
         Book niSu = new Book("Ни сы", sinsero, 2013 );
-        Book сapitalMarks = new Book("Капитал", marks, 1867);
+        Book capital = new Book("Капитал", marks, 1867);
 
         niSu.setYear(1967);
         System.out.println("Книга: " + niSu.getName() + " опубликована:" +
                 niSu.getYear() + ". Автор книги: " + niSu.getAuthor().getFirstName() + " "
                 + niSu.getAuthor().getLastName());
 
+        System.out.println("Книга: " + capital.getName() + " опубликована:" +
+                capital.getYear() + ". Автор книги: " + capital.getAuthor().getFirstName() + " "
+                + capital.getAuthor().getLastName());
 
 
 
